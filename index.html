@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscríbete Ahora</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            overflow: hidden;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            z-index: 2;
+            animation: logoAnimation 2s ease infinite alternate;
+        }
+        @keyframes logoAnimation {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            z-index: 2;
+            position: relative;
+            animation: containerAnimation 2s ease infinite alternate;
+        }
+        @keyframes containerAnimation {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(10px); }
+        }
+        .container img.main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: imageAnimation 4s ease infinite alternate;
+        }
+        @keyframes imageAnimation {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #333;
+            font-weight: 600;
+        }
+        .container p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .btn:active {
+            background-color: #004494;
+            transform: translateY(1px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            .container h1 {
+                font-size: 2em;
+            }
+            .container p {
+                font-size: 1em;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+            .logo {
+                width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="Recursos/uttlogo.png" alt="Logo" class="logo">
+    <div class="container">
+        <img src="Recursos/1.png" alt="Imagen de bienvenida" class="main-image">
+        <h1>Bienvenido a Nuestra Universidad</h1>
+        <p>¡Descubre nuestras excelentes oportunidades académicas!</p>
+        <a href="Formulario.html" class="btn">Inscríbete Ahora</a>
+    </div>
+</body>
+</html>
+
+
+
